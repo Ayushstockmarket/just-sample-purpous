@@ -12,13 +12,12 @@ function toggleModes() {
     if (mode === "Dark") {
       body.classList.add("Dark");
       body.classList.remove("light");
-    } else if (mode == "Light") {
+    } else if (mode === "Light") {
       body.classList.add("light");
       body.classList.remove("Dark");
     } else {
       console.log("Please Refresh The Page Buddy");
     }
-    getLocalStorage();
   });
   
 }
@@ -46,16 +45,18 @@ function setLocalStorage() {
 }
 function getLocalStorage() {
   storeLocalStorage = JSON.parse(localStorage.getItem("pageSettings"));
-  mode = storeLocalStorage.mode;
+  if(storeLocalStorage){
+    mode = storeLocalStorage.mode;
   fontSize = storeLocalStorage.fontSize;
   if (mode === "Dark") {
     body.classList.add("Dark");
     body.classList.remove("light");
-  } else if (mode == "Light") {
+  } else if (mode === "Light") {
     body.classList.add("light");
     body.classList.remove("Dark");
   } else {
     console.log("Please Refresh The Page Buddy");
   }
   body.style.fontSize = fontSize;
+  }
 }

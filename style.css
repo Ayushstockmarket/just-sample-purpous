@@ -1,10 +1,10 @@
 /* Dark mode and light mode code here  */
 
-body.light{
+.light{
   background-color: white;
   color: black;
 }
-body.Dark{
+.Dark{
   background-color: black;
   color: white;
 }
