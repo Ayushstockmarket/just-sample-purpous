@@ -1,0 +1,47 @@
+/* Dark mode and light mode code here  */
+
+body.light{
+  background-color: white;
+  color: black;
+}
+body.Dark{
+  background-color: black;
+  color: white;
+}
+body {
+  font-size: 16px; /* Default font size */
+}
+.stylingDirectUser {
+  display: flex;
+  gap: 10px; /* Add some space between the select elements */
+}
+.header_Top_of_the_bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+select{
+  border: none;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+/* Media queries for different screen sizes */
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    max-width: 576px;
+  }
+}
